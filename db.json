@@ -12,5 +12,13 @@
       "description": "delhi",
       "id": 2
     }
+  ],
+  "city": [
+    {
+      "city": "Delhi",
+      "population": "1200000",
+      "countryName": "India",
+      "id": 1
+    }
   ]
 }

@@ -1,27 +1,18 @@
-
+import React from 'react';
+import {Routes , Route} from 'react-router-dom'
 import './App.css';
-import {Country} from "./components/Country"
-import {EditCountry} from "./components/Edit"
-import {Routes,Route,Link} from "react-router-dom"
-import{Details} from "./components/Details"
-
-
+import { AddCity } from './components/AddCity';
+import { AddCountry } from './components/AddCountry';
+import { Home } from './components/Home';
 
 function App() {
   return (
-    <div className="App">
-    <header>
-      <Link to={"/"}>
-
-      </Link>
-
-    </header>
-   <Routes>
-     <Route path="/" element={<Country/>}></Route>
-     <Route path="/country/:id/edit" element={<EditCountry/>}></Route>
-     <Route path="/country/:id" element={<Details/>}></Route>
-
-   </Routes>
+    <div>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/add-country' element={<AddCountry/>}></Route>
+        <Route path='/add-city' element={<AddCity/>}></Route>
+      </Routes>
     </div>
   );
 }
