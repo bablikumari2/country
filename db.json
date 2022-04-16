@@ -19,6 +19,12 @@
       "population": "1200000",
       "countryName": "India",
       "id": 1
+    },
+    {
+      "city": "bhagalpur",
+      "population": "200000",
+      "countryName": "India",
+      "id": 2
     }
   ]
 }
